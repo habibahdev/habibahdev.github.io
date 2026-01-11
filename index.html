@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a192f',
+            lightNavy: '#112240',
+            slate: '#8892b0',
+            lightSlate: '#ccd6f6',
+            accent: '#64ffda',
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-navy text-lightSlate font-sans scroll-smooth">
+
+<!-- NAVBAR STICKY -->
+<header class="sticky top-0 z-50 backdrop-blur bg-navy/80 border-b border-white/5">
+  <nav class="flex justify-between items-center px-6 md:px-24 h-20">
+    <!-- Logo -->
+    <div class="text-accent font-bold text-lg">TN</div>
+
+    <!-- Menu -->
+    <ul class="hidden md:flex gap-8 text-sm">
+      <li><a href="#about" class="hover:text-accent"><span class="text-accent">01.</span> À propos</a></li>
+      <li><a href="#skills" class="hover:text-accent"><span class="text-accent">02.</span> Compétences</a></li>
+      <li><a href="#projects" class="hover:text-accent"><span class="text-accent">03.</span> Projets</a></li>
+      <li><a href="#contact" class="hover:text-accent"><span class="text-accent">04.</span> Contact</a></li>
+    </ul>
+
+    <!-- CV -->
+    <a href="assets/CV-1.pdf"
+       class="hidden md:inline-block border border-accent text-accent px-4 py-2 rounded
+              hover:bg-accent hover:text-navy transition">
+      CV
+    </a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="min-h-screen flex flex-col justify-center px-6 md:px-24">
+  <p class="text-accent mb-4">Bonjour, je m'appelle</p>
+  <h1 class="text-4xl md:text-6xl font-bold mb-2">Ton Nom</h1>
+  <h2 class="text-4xl md:text-6xl font-bold text-slate mb-6">
+    Développeur Frontend.
+  </h2>
+  <p class="max-w-xl text-slate">
+    Je construis des interfaces web modernes, accessibles et performantes.
+  </p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="px-6 md:px-24 py-32">
+  <h3 class="text-2xl font-bold mb-6">
+    <span class="text-accent">01.</span> À propos
+  </h3>
+  <p class="max-w-2xl text-slate">
+    Développeur passionné par le web, spécialisé en HTML, Tailwind CSS et JavaScript.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="px-6 md:px-24 py-32">
+  <h3 class="text-2xl font-bold mb-6">
+    <span class="text-accent">02.</span> Compétences
+  </h3>
+  <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-slate">
+    <li>HTML</li>
+    <li>CSS / Tailwind</li>
+    <li>JavaScript</li>
+    <li>Git</li>
+    <li>Responsive Design</li>
+    <li>Accessibilité</li>
+  </ul>
+</section>
+
+<!-- PROJECTS (Other Projects Style) -->
+<section id="projects" class="px-6 md:px-24 py-32">
+  <h3 class="text-2xl font-bold mb-16">
+    <span class="text-accent">03.</span> Projets
+  </h3>
+
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    
+    <!-- Projet 1 -->
+    <div class="bg-lightNavy p-6 rounded shadow hover:shadow-lg transition">
+      <p class="text-accent text-sm mb-2">Projet</p>
+      <h4 class="text-xl font-bold mb-2">Nom du projet 1</h4>
+      <p class="text-slate mb-4 text-sm">
+        Description courte du projet. Explique l'objectif ou la stack principale.
+      </p>
+      <ul class="flex flex-wrap gap-2 text-xs text-slate mb-4">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Tailwind</li>
+      </ul>
+      <div class="flex gap-4 text-accent text-sm">
+        <a href="#" class="hover:underline">GitHub</a>
+        <a href="#" class="hover:underline">Live</a>
+      </div>
+    </div>
+
+    <!-- Projet 2 -->
+    <div class="bg-lightNavy p-6 rounded shadow hover:shadow-lg transition">
+      <p class="text-accent text-sm mb-2">Projet</p>
+      <h4 class="text-xl font-bold mb-2">Nom du projet 2</h4>
+      <p class="text-slate mb-4 text-sm">
+        Description courte du projet. Explique l'objectif ou la stack principale.
+      </p>
+      <ul class="flex flex-wrap gap-2 text-xs text-slate mb-4">
+        <li>JavaScript</li>
+        <li>Tailwind</li>
+        <li>Responsive</li>
+      </ul>
+      <div class="flex gap-4 text-accent text-sm">
+        <a href="#" class="hover:underline">GitHub</a>
+        <a href="#" class="hover:underline">Live</a>
+      </div>
+    </div>
+
+    <!-- Projet 3 -->
+    <div class="bg-lightNavy p-6 rounded shadow hover:shadow-lg transition">
+      <p class="text-accent text-sm mb-2">Projet</p>
+      <h4 class="text-xl font-bold mb-2">Nom du projet 3</h4>
+      <p class="text-slate mb-4 text-sm">
+        Description courte du projet. Explique l'objectif ou la stack principale.
+      </p>
+      <ul class="flex flex-wrap gap-2 text-xs text-slate mb-4">
+        <li>React</li>
+        <li>Tailwind</li>
+        <li>UI/UX</li>
+      </ul>
+      <div class="flex gap-4 text-accent text-sm">
+        <a href="#" class="hover:underline">GitHub</a>
+        <a href="#" class="hover:underline">Live</a>
+      </div>
+    </div>
+
+    <!-- Tu peux dupliquer ces blocs pour plus de projets -->
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-6 md:px-24 py-32 text-center">
+  <h3 class="text-2xl font-bold mb-6">
+    <span class="text-accent">04.</span> Contact
+  </h3>
+  <p class="text-slate mb-8">
+    Envie de discuter ou de travailler ensemble ?
+  </p>
+  <a href="mailto:email@email.com"
+     class="inline-block border border-accent text-accent px-6 py-3 rounded
+            hover:bg-accent hover:text-navy transition">
+    Dis bonjour 👋
+  </a>
+</section>
+
+</body>
+</html>
