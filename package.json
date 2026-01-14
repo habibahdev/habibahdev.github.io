@@ -1,0 +1,22 @@
+{
+  "name": "habibahdev.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --minify",
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/habibahdev/habibahdev.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/habibahdev/habibahdev.github.io/issues"
+  },
+  "homepage": "https://github.com/habibahdev/habibahdev.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
