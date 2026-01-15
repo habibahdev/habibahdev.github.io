@@ -9,29 +9,29 @@
         <link rel="stylesheet" href="assets/css/output.css">
     </head>
 
-    <body class="bg-white dark:bg-navy text-gray-800 dark:text-lightSlate font-sans scroll-smooth transition-colors duration-300">
+    <body class="bg-lightBg dark:bg-navy text-lightText dark:text-lightSlate font-sans scroll-smooth transition-colors duration-300">
 
-        <header class="sticky top-0 z-50 backdrop-blur bg-white/90 dark:bg-navy/90 border-b border-gray-200 dark:border-white/5 transition-colors duration-300">
+        <header class="sticky top-0 z-50 backdrop-blur bg-lightBg/90 dark:bg-navy/90 border-b border-lightTextSecondary/20 dark:border-white/5 transition-colors duration-300">
             <nav class="flex justify-between items-center px-6 md:px-24 h-20">
-                <div class="text-accent font-bold text-lg">Umm-Habibah Ouattara</div>
+                <div class="text-accentLight dark:text-accent font-bold text-lg">Umm-Habibah Ouattara</div>
 
                 <ul class="hidden md:flex gap-8 text-sm">
-                    <li><a href="#about" class="text-gray-700 dark:text-lightSlate hover:text-accent transition">À Propos</a></li>
-                    <li><a href="#skills" class="text-gray-700 dark:text-lightSlate hover:text-accent transition">Compétences</a></li>
-                    <li><a href="#projects" class="text-gray-700 dark:text-lightSlate hover:text-accent transition">Projets</a></li>
-                    <li><a href="#journey" class="text-gray-700 dark:text-lightSlate hover:text-accent transition">Parcours</a></li>
+                    <li><a href="#about" class="text-lightText dark:text-lightSlate hover:text-accentLight dark:hover:text-accent transition">À Propos</a></li>
+                    <li><a href="#skills" class="text-lightText dark:text-lightSlate hover:text-accentLight dark:hover:text-accent transition">Compétences</a></li>
+                    <li><a href="#projects" class="text-lightText dark:text-lightSlate hover:text-accentLight dark:hover:text-accent transition">Projets</a></li>
+                    <li><a href="#journey" class="text-lightText dark:text-lightSlate hover:text-accentLight dark:hover:text-accent transition">Parcours</a></li>
                 </ul>
 
                 <div class="flex items-center gap-4">
                     <!-- Theme Toggle -->
-                    <button id="themeToggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-lightNavy transition-colors">
-                        <i class="ri-sun-line text-xl text-gray-700 dark:text-lightSlate dark:hidden"></i>
+                    <button id="themeToggle" class="p-2 rounded-lg hover:bg-lightBgSecondary dark:hover:bg-lightNavy transition-colors">
+                        <i class="ri-sun-line text-xl text-lightText dark:text-lightSlate dark:hidden"></i>
                         <i class="ri-moon-line text-xl text-lightSlate hidden dark:block"></i>
                     </button>
                     
                     <a href="assets/CV-1.pdf"
-                    class="hidden md:inline-block border-2 border-accent text-accent px-5 py-2 text-sm
-                            hover:bg-accent/10 transition rounded">
+                    class="hidden md:inline-block border-2 border-accentLight dark:border-accent text-accentLight dark:text-accent px-5 py-2 text-sm
+                            hover:bg-accentLight/10 dark:hover:bg-accent/10 transition rounded">
                     Télécharger CV
                     </a>
                 </div>
@@ -40,24 +40,24 @@
 
         <!-- HERO -->
         <section class="min-h-screen flex flex-col justify-center px-6 md:px-24">
-            <div class="text-accent text-2xl mb-4 fade-in-up">Bonjour, je suis</div>
-            <h1 class="text-5xl md:text-7xl mb-6 font-bold text-gray-900 dark:text-lightSlate fade-in-up" style="animation-delay: 0.1s;">
+            <div class="text-accentLight dark:text-accent text-2xl mb-4 fade-in-up">Bonjour, je suis</div>
+            <h1 class="text-5xl md:text-7xl mb-6 font-bold text-lightText dark:text-lightSlate fade-in-up" style="animation-delay: 0.1s;">
                 Umm-Habibah Ouattara
             </h1>
-            <h2 class="text-3xl md:text-5xl mb-8 text-gray-600 dark:text-slate fade-in-up" style="animation-delay: 0.2s;">
+            <h2 class="text-3xl md:text-5xl mb-8 text-lightTextSecondary dark:text-slate fade-in-up" style="animation-delay: 0.2s;">
                 Je construis des applications web
             </h2>
-            <p class="text-gray-600 dark:text-slate text-lg max-w-2xl mb-12 leading-relaxed fade-in-up" style="animation-delay: 0.3s;">
+            <p class="text-lightTextSecondary dark:text-slate text-lg max-w-2xl mb-12 leading-relaxed fade-in-up" style="animation-delay: 0.3s;">
                 Étudiante en master GIL, je construis des applications web avec 
-                <span class="text-accent font-semibold">Symfony</span>, <span class="text-accent font-semibold">PHP</span> et 
-                <span class="text-accent font-semibold">MySQL</span>. Entre les cours, je résous des challenges sur <span class="text-accent font-semibold">CodinGame</span>
-                et je suis une formation sur les bases de données relationnelles sur la plate-forme <span class="text-accent font-semibold">freeCodeCamp</span>.
+                <span class="text-accentLight dark:text-accent font-semibold">Symfony</span>, <span class="text-accentLight dark:text-accent font-semibold">PHP</span> et 
+                <span class="text-accentLight dark:text-accent font-semibold">MySQL</span>. Entre les cours, je résous des challenges sur <span class="text-accentLight dark:text-accent font-semibold">CodinGame</span>
+                et je suis une formation sur les bases de données relationnelles sur la plate-forme <span class="text-accentLight dark:text-accent font-semibold">freeCodeCamp</span>.
             </p>
             <div class="flex gap-4 fade-in-up" style="animation-delay: 0.4s;">
-                <a href="#projects" class="bg-transparent border-2 border-accent text-accent px-8 py-3 rounded hover:bg-accent/10 transition">
+                <a href="#projects" class="bg-transparent border-2 border-accentLight dark:border-accent text-accentLight dark:text-accent px-8 py-3 rounded hover:bg-accentLight/10 dark:hover:bg-accent/10 transition">
                     <i class="ri-corner-right-down-fill mr-2"></i>Voir mes projets
                 </a>
-                <a href="https://github.com/habibahdev" target="_blank" class="bg-accent/10 border-2 border-accent text-accent px-8 py-3 rounded hover:bg-accent hover:text-white dark:hover:text-navy transition">
+                <a href="https://github.com/habibahdev" target="_blank" class="bg-accentLight/10 dark:bg-accent/10 border-2 border-accentLight dark:border-accent text-accentLight dark:text-accent px-8 py-3 rounded hover:bg-accentLight hover:text-white dark:hover:bg-accent dark:hover:text-navy transition">
                     <i class="ri-github-fill mr-2"></i>GitHub
                 </a>
             </div>
@@ -66,46 +66,46 @@
         <!-- ABOUT -->
         <section id="about" class="px-6 md:px-24 py-32">
             <div class="flex items-center gap-4 mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-lightSlate">À Propos</h2>
-                <div class="h-px bg-gray-300 dark:bg-slate/30 flex-grow max-w-xs"></div>
+                <h2 class="text-3xl font-bold text-lightText dark:text-lightSlate">À Propos</h2>
+                <div class="h-px bg-lightTextSecondary/30 dark:bg-slate/30 flex-grow max-w-xs"></div>
             </div>
             
             <div class="grid md:grid-cols-2 gap-12 items-start">
-                <div class="space-y-4 text-gray-600 dark:text-slate text-lg leading-relaxed">
+                <div class="space-y-4 text-lightTextSecondary dark:text-slate text-lg leading-relaxed">
                     <p>
                         Je suis actuellement en master 
-                        <span class="text-gray-900 dark:text-lightSlate font-semibold">Génie de l'Informatique Logicielle</span>. 
+                        <span class="text-lightText dark:text-lightSlate font-semibold">Génie de l'Informatique Logicielle</span>. 
                         Je développe des compétences solides en backend avec PHP et Symfony.
                     </p>
                     <p>
                         Au-delà des cours, je m'investis dans des challenges sur 
-                        <span class="text-gray-900 dark:text-lightSlate font-semibold">CodinGame</span> et je suis également
+                        <span class="text-lightText dark:text-lightSlate font-semibold">CodinGame</span> et je suis également
                         une formation sur les bases de données relationnelles 
-                        sur <span class="text-gray-900 dark:text-lightSlate font-semibold">freeCodeCamp</span> pour constamment améliorer mes compétences.
+                        sur <span class="text-lightText dark:text-lightSlate font-semibold">freeCodeCamp</span> pour constamment améliorer mes compétences.
                     </p>
                     <p>
-                        Je recherche un poste de <span class="text-gray-900 dark:text-lightSlate font-semibold">développeuse backend PHP</span> 
+                        Je recherche un poste de <span class="text-lightText dark:text-lightSlate font-semibold">développeuse backend PHP</span> 
                         où je pourrai contribuer à des projets innovants, stimulants tout en continuant à apprendre et à évoluer.
                     </p>
                 </div>
                 
-                <div class="bg-gray-50 dark:bg-lightNavy/50 p-8 rounded-lg border border-gray-200 dark:border-accent/20 transition-colors duration-300">
-                    <h3 class="text-accent text-xl font-semibold mb-4">En ce moment</h3>
-                    <ul class="space-y-3 text-gray-600 dark:text-slate">
+                <div class="bg-lightBgSecondary dark:bg-lightNavy/50 p-8 rounded-lg border border-lightTextSecondary/20 dark:border-accent/20 transition-colors duration-300">
+                    <h3 class="text-accentLight dark:text-accent text-xl font-semibold mb-4">En ce moment</h3>
+                    <ul class="space-y-3 text-lightTextSecondary dark:text-slate">
                         <li class="flex items-start gap-3">
-                            <i class="ri-arrow-right-s-fill text-accent mt-1"></i>
+                            <i class="ri-arrow-right-s-fill text-accentLight dark:text-accent mt-1"></i>
                             <span>Résolution de challenges algorithmiques - CodinGame</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ri-arrow-right-s-fill text-accent mt-1"></i>
+                            <i class="ri-arrow-right-s-fill text-accentLight dark:text-accent mt-1"></i>
                             <span>Formation base de données relationnelles - freeCodeCamp</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ri-arrow-right-s-fill text-accent mt-1"></i>
+                            <i class="ri-arrow-right-s-fill text-accentLight dark:text-accent mt-1"></i>
                             <span>Réalisation d'une application de vente en ligne - projet personnel</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="ri-arrow-right-s-fill text-accent mt-1"></i>
+                            <i class="ri-arrow-right-s-fill text-accentLight dark:text-accent mt-1"></i>
                             <span>Réalisation d'une application de transport - projet personnel</span>
                         </li>
                     </ul>
@@ -114,71 +114,71 @@
         </section>
 
         <!-- SKILLS -->
-        <section id="skills" class="px-6 md:px-24 py-32 bg-gray-50 dark:bg-lightNavy/30 transition-colors duration-300">
+        <section id="skills" class="px-6 md:px-24 py-32 bg-lightBgSecondary dark:bg-lightNavy/30 transition-colors duration-300">
             <div class="flex items-center gap-4 mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-lightSlate">Compétences Techniques</h2>
-                <div class="h-px bg-gray-300 dark:bg-slate/30 flex-grow max-w-xs"></div>
+                <h2 class="text-3xl font-bold text-lightText dark:text-lightSlate">Compétences Techniques</h2>
+                <div class="h-px bg-lightTextSecondary/30 dark:bg-slate/30 flex-grow max-w-xs"></div>
             </div>
 
             <div class="grid gap-8 lg:grid-cols-4 md:grid-cols-2">
                 <!-- Languages -->
-                <div class="bg-white dark:bg-navy/50 p-6 rounded-lg border border-gray-200 dark:border-accent/10 hover:border-accent dark:hover:border-accent/30 transition-colors duration-300">
+                <div class="bg-lightBg dark:bg-navy/50 p-6 rounded-lg border border-lightTextSecondary/20 dark:border-accent/10 hover:border-accentLight dark:hover:border-accent/30 transition-colors duration-300">
                     <div class="flex items-center gap-3 mb-6">
-                        <i class="ri-code-s-slash-line text-2xl text-accent"></i>
-                        <h3 class="text-xl font-semibold text-gray-900 dark:text-lightSlate">Langages</h3>
+                        <i class="ri-code-s-slash-line text-2xl text-accentLight dark:text-accent"></i>
+                        <h3 class="text-xl font-semibold text-lightText dark:text-lightSlate">Langages</h3>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">PHP</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">Java</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">C</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">Python</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">SQL</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">HTML/CSS</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">PHP</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">Java</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">C</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">Python</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">SQL</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">HTML/CSS</span>
                     </div>
                 </div>
 
                 <!-- Frameworks -->
-                <div class="bg-white dark:bg-navy/50 p-6 rounded-lg border border-gray-200 dark:border-accent/10 hover:border-accent dark:hover:border-accent/30 transition-colors duration-300">
+                <div class="bg-lightBg dark:bg-navy/50 p-6 rounded-lg border border-lightTextSecondary/20 dark:border-accent/10 hover:border-accentLight dark:hover:border-accent/30 transition-colors duration-300">
                     <div class="flex items-center gap-3 mb-6">
-                        <i class="ri-stack-line text-2xl text-accent"></i>
-                        <h3 class="text-xl font-semibold text-gray-900 dark:text-lightSlate">Frameworks</h3>
+                        <i class="ri-stack-line text-2xl text-accentLight dark:text-accent"></i>
+                        <h3 class="text-xl font-semibold text-lightText dark:text-lightSlate">Frameworks</h3>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">Symfony</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">Bootstrap</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">Tailwind CSS</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">Symfony</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">Bootstrap</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">Tailwind CSS</span>
                     </div>
                 </div>
 
                 <!-- Tools -->
-                <div class="bg-white dark:bg-navy/50 p-6 rounded-lg border border-gray-200 dark:border-accent/10 hover:border-accent dark:hover:border-accent/30 transition-colors duration-300">
+                <div class="bg-lightBg dark:bg-navy/50 p-6 rounded-lg border border-lightTextSecondary/20 dark:border-accent/10 hover:border-accentLight dark:hover:border-accent/30 transition-colors duration-300">
                     <div class="flex items-center gap-3 mb-6">
-                        <i class="ri-tools-line text-2xl text-accent"></i>
-                        <h3 class="text-xl font-semibold text-gray-900 dark:text-lightSlate">Outils</h3>
+                        <i class="ri-tools-line text-2xl text-accentLight dark:text-accent"></i>
+                        <h3 class="text-xl font-semibold text-lightText dark:text-lightSlate">Outils</h3>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">Git & GitHub</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">Docker</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">Postman</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">MySQL</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">PostgreSQL</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">Bash</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">Jira</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">Git & GitHub</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">Docker</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">Postman</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">MySQL</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">PostgreSQL</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">Bash</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">Jira</span>
                     </div>
                 </div>
 
                 <!-- Methodologies -->
-                <div class="bg-white dark:bg-navy/50 p-6 rounded-lg border border-gray-200 dark:border-accent/10 hover:border-accent dark:hover:border-accent/30 transition-colors duration-300">
+                <div class="bg-lightBg dark:bg-navy/50 p-6 rounded-lg border border-lightTextSecondary/20 dark:border-accent/10 hover:border-accentLight dark:hover:border-accent/30 transition-colors duration-300">
                     <div class="flex items-center gap-3 mb-6">
-                        <i class="ri-lightbulb-line text-2xl text-accent"></i>
-                        <h3 class="text-xl font-semibold text-gray-900 dark:text-lightSlate">Méthodologies</h3>
+                        <i class="ri-lightbulb-line text-2xl text-accentLight dark:text-accent"></i>
+                        <h3 class="text-xl font-semibold text-lightText dark:text-lightSlate">Méthodologies</h3>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">POO</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">TDD</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">Agile</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">PDO</span>
-                        <span class="skill-badge bg-accent/10 text-accent px-3 py-1.5 rounded text-sm border border-accent/20">BDD</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">POO</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">TDD</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">Agile</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">PDO</span>
+                        <span class="skill-badge bg-accentLight/10 dark:bg-accent/10 text-accentLight dark:text-accent px-3 py-1.5 rounded text-sm border border-accentLight/20 dark:border-accent/20">BDD</span>
                     </div>
                 </div>
             </div>
@@ -187,121 +187,121 @@
         <!-- PROJECTS -->
         <section id="projects" class="px-6 md:px-24 py-32">
             <div class="flex items-center gap-4 mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-lightSlate">Projets Réalisés</h2>
-                <div class="h-px bg-gray-300 dark:bg-slate/30 flex-grow max-w-xs"></div>
+                <h2 class="text-3xl font-bold text-lightText dark:text-lightSlate">Projets Réalisés</h2>
+                <div class="h-px bg-lightTextSecondary/30 dark:bg-slate/30 flex-grow max-w-xs"></div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Projet Featured: Ebazar -->
-                <div class="project-card md:col-span-2 bg-gray-50 dark:bg-lightNavy p-8 rounded-lg border-2 border-accent/30 hover:border-accent shadow-lg transition-colors duration-300">
+                <div class="project-card md:col-span-2 bg-lightBgSecondary dark:bg-lightNavy p-8 rounded-lg border-2 border-accentLight/30 dark:border-accent/30 hover:border-accentLight dark:hover:border-accent shadow-lg transition-colors duration-300">
                     <div class="flex items-start justify-between mb-4">
                         <div class="flex items-center gap-3">
-                            <i class="ri-star-fill text-accent text-xl"></i>
-                            <span class="text-accent text-sm font-semibold">PROJET PHARE</span>
+                            <i class="ri-star-fill text-accentLight dark:text-accent text-xl"></i>
+                            <span class="text-accentLight dark:text-accent text-sm font-semibold">PROJET PHARE</span>
                         </div>
-                        <a href="https://github.com/habibahdev/ebazar" target="_blank" class="text-gray-600 dark:text-slate hover:text-accent transition">
+                        <a href="https://github.com/habibahdev/ebazar" target="_blank" class="text-lightTextSecondary dark:text-slate hover:text-accentLight dark:hover:text-accent transition">
                             <i class="ri-github-fill text-2xl"></i>
                         </a>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-lightSlate mb-4">Ebazar - Plateforme de Petites Annonces</h3>
-                    <p class="text-gray-600 dark:text-slate text-lg mb-6 leading-relaxed">
+                    <h3 class="text-2xl font-bold text-lightText dark:text-lightSlate mb-4">Ebazar - Plateforme de Petites Annonces</h3>
+                    <p class="text-lightTextSecondary dark:text-slate text-lg mb-6 leading-relaxed">
                         Application web complète permettant aux utilisateurs de publier et consulter des annonces. 
                         Implémentation d'un système d'authentification, de gestion des annonces avec upload d'images, 
                         et d'une interface responsive utilisant Bootstrap.
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1.5 text-sm rounded">PHP</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1.5 text-sm rounded">MVC</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1.5 text-sm rounded">MySQL</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1.5 text-sm rounded">Bootstrap</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1.5 text-sm rounded">HTML/CSS</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">PHP</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">MVC</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">MySQL</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">Bootstrap</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">HTML/CSS</span>
                     </div>
                 </div>
 
                 <!-- MelodyMe -->
-                <div class="project-card bg-gray-50 dark:bg-lightNavy p-6 rounded-lg border border-gray-200 dark:border-accent/20 hover:border-accent dark:hover:border-accent/50 transition-colors duration-300">
+                <div class="project-card bg-lightBgSecondary dark:bg-lightNavy p-6 rounded-lg border border-lightTextSecondary/20 dark:border-accent/20 hover:border-accentLight dark:hover:border-accent/50 transition-colors duration-300">
                     <div class="flex items-start justify-between mb-4">
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-lightSlate">MelodyMe</h3>
-                        <a href="https://github.com/MelodyMatch/micro-service-user" target="_blank" class="text-gray-600 dark:text-slate hover:text-accent transition">
+                        <h3 class="text-xl font-bold text-lightText dark:text-lightSlate">MelodyMe</h3>
+                        <a href="https://github.com/MelodyMatch/micro-service-user" target="_blank" class="text-lightTextSecondary dark:text-slate hover:text-accentLight dark:hover:text-accent transition">
                             <i class="ri-github-fill text-xl"></i>
                         </a>
                     </div>
-                    <p class="text-gray-600 dark:text-slate mb-4 leading-relaxed">
+                    <p class="text-lightTextSecondary dark:text-slate mb-4 leading-relaxed">
                         Microservice d'authentification sécurisé intégrant Keycloak pour la gestion des identités. 
                         Développement d'API REST avec Python pour gérer l'inscription, la connexion et les tokens JWT.
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">Python</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">Keycloak</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">PostgreSQL</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">Postman</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">Python</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">Keycloak</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">PostgreSQL</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">Postman</span>
                     </div>
                 </div>
 
                 <!-- JSync -->
-                <div class="project-card bg-gray-50 dark:bg-lightNavy p-6 rounded-lg border border-gray-200 dark:border-accent/20 hover:border-accent dark:hover:border-accent/50 transition-colors duration-300">
+                <div class="project-card bg-lightBgSecondary dark:bg-lightNavy p-6 rounded-lg border border-lightTextSecondary/20 dark:border-accent/20 hover:border-accentLight dark:hover:border-accent/50 transition-colors duration-300">
                     <div class="flex items-start justify-between mb-4">
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-lightSlate">JSync</h3>
-                        <a href="https://github.com/habibahdev/JSync" target="_blank" class="text-gray-600 dark:text-slate hover:text-accent transition">
+                        <h3 class="text-xl font-bold text-lightText dark:text-lightSlate">JSync</h3>
+                        <a href="https://github.com/habibahdev/JSync" target="_blank" class="text-lightTextSecondary dark:text-slate hover:text-accentLight dark:hover:text-accent transition">
                             <i class="ri-github-fill text-xl"></i>
                         </a>
                     </div>
-                    <p class="text-gray-600 dark:text-slate mb-4 leading-relaxed">
+                    <p class="text-lightTextSecondary dark:text-slate mb-4 leading-relaxed">
                         Application de synchronisation de fichiers développée en Java. Détection automatique des modifications, 
                         synchronisation bidirectionnelle et gestion des conflits, mettant en place différents designs patterns.
                         Modélisation UML avec PlantUML.
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">Java</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">POO</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">IntelliJ</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">PlantUML</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">Java</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">POO</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">IntelliJ</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">PlantUML</span>
                     </div>
                 </div>
 
                 <!-- Random Product -->
-                <div class="project-card bg-gray-50 dark:bg-lightNavy p-6 rounded-lg border border-gray-200 dark:border-accent/20 hover:border-accent dark:hover:border-accent/50 transition-colors duration-300">
+                <div class="project-card bg-lightBgSecondary dark:bg-lightNavy p-6 rounded-lg border border-lightTextSecondary/20 dark:border-accent/20 hover:border-accentLight dark:hover:border-accent/50 transition-colors duration-300">
                     <div class="flex items-start justify-between mb-4">
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-lightSlate">Random Product</h3>
-                        <a href="https://github.com/habibahdev/randshop" target="_blank" class="text-gray-600 dark:text-slate hover:text-accent transition">
+                        <h3 class="text-xl font-bold text-lightText dark:text-lightSlate">Random Product</h3>
+                        <a href="https://github.com/habibahdev/randshop" target="_blank" class="text-lightTextSecondary dark:text-slate hover:text-accentLight dark:hover:text-accent transition">
                             <i class="ri-github-fill text-xl"></i>
                         </a>
                     </div>
-                    <p class="text-gray-600 dark:text-slate mb-4 leading-relaxed">
+                    <p class="text-lightTextSecondary dark:text-slate mb-4 leading-relaxed">
                         Application PHP affichant un produit aléatoire à chaque chargement. 
                         Interaction avec base de données MySQL et interface moderne avec Tailwind CSS.
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">PHP</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">MySQL</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">MVC</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">Tailwind</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">PHP</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">MySQL</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">MVC</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">Tailwind</span>
                     </div>
                 </div>
 
                 <!-- Portfolio -->
-                <div class="project-card bg-gray-50 dark:bg-lightNavy p-6 rounded-lg border border-gray-200 dark:border-accent/20 hover:border-accent dark:hover:border-accent/50 transition-colors duration-300">
+                <div class="project-card bg-lightBgSecondary dark:bg-lightNavy p-6 rounded-lg border border-lightTextSecondary/20 dark:border-accent/20 hover:border-accentLight dark:hover:border-accent/50 transition-colors duration-300">
                     <div class="flex items-start justify-between mb-4">
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-lightSlate">Portfolio v1</h3>
-                        <a href="https://github.com/habibahdev/habibahdev.github.io" target="_blank" class="text-gray-600 dark:text-slate hover:text-accent transition">
+                        <h3 class="text-xl font-bold text-lightText dark:text-lightSlate">Portfolio v1</h3>
+                        <a href="https://github.com/habibahdev/habibahdev.github.io" target="_blank" class="text-lightTextSecondary dark:text-slate hover:text-accentLight dark:hover:text-accent transition">
                             <i class="ri-github-fill text-xl"></i>
                         </a>
                     </div>
-                    <p class="text-gray-600 dark:text-slate mb-4 leading-relaxed">
+                    <p class="text-lightTextSecondary dark:text-slate mb-4 leading-relaxed">
                         Site portfolio personnel moderne et responsive. Design épuré avec animations et interface utilisateur fluide 
                         utilisant Tailwind CSS pour le front.
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">HTML</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">Tailwind CSS</span>
-                        <span class="bg-white dark:bg-navy border border-accent/30 text-accent px-3 py-1 text-xs rounded">JavaScript</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">HTML</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">Tailwind CSS</span>
+                        <span class="bg-lightBg dark:bg-navy border border-accentLight/30 dark:border-accent/30 text-accentLight dark:text-accent px-3 py-1.5 text-sm rounded">JavaScript</span>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mt-12">
                 <a href="https://github.com/habibahdev" target="_blank" 
-                class="inline-flex items-center gap-2 text-accent hover:text-gray-900 dark:hover:text-lightSlate transition border-b-2 border-accent pb-1">
+                class="inline-flex items-center gap-2 text-accentLight dark:text-accent hover:text-lightText dark:hover:text-lightSlate transition border-b-2 border-accentLight dark:border-accent pb-1">
                     Voir tous mes projets sur GitHub
                     <i class="ri-arrow-right-line"></i>
                 </a>
@@ -309,22 +309,22 @@
         </section>
 
         <!-- JOURNEY -->
-        <section id="journey" class="px-6 md:px-24 py-32 bg-gray-50 dark:bg-lightNavy/30 transition-colors duration-300">
+        <section id="journey" class="px-6 md:px-24 py-32 bg-lightBgSecondary dark:bg-lightNavy/30 transition-colors duration-300">
             <div class="flex items-center gap-4 mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-lightSlate">Mon Parcours</h2>
-                <div class="h-px bg-gray-300 dark:bg-slate/30 flex-grow max-w-xs"></div>
+                <h2 class="text-3xl font-bold text-lightText dark:text-lightSlate">Mon Parcours</h2>
+                <div class="h-px bg-lightTextSecondary/30 dark:bg-slate/30 flex-grow max-w-xs"></div>
             </div>
 
             <div class="max-w-3xl space-y-8">
                 <div class="flex gap-6">
                     <div class="flex flex-col items-center">
-                        <div class="w-4 h-4 rounded-full bg-accent"></div>
-                        <div class="w-0.5 h-full bg-accent/30 mt-2"></div>
+                        <div class="w-4 h-4 rounded-full bg-accentLight dark:bg-accent"></div>
+                        <div class="w-0.5 h-full bg-accentLight/30 dark:bg-accent/30 mt-2"></div>
                     </div>
                     <div class="pb-8">
-                        <div class="text-gray-600 dark:text-slate text-sm mb-1">En cours</div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-lightSlate mb-2">Master Génie de l'Informatique Logicielle</h3>
-                        <p class="text-gray-600 dark:text-slate">
+                        <div class="text-lightTextSecondary dark:text-slate text-sm mb-1">En cours</div>
+                        <h3 class="text-xl font-bold text-lightText dark:text-lightSlate mb-2">Master Génie de l'Informatique Logicielle</h3>
+                        <p class="text-lightTextSecondary dark:text-slate">
                             Spécialisation en architecture logiciel.
                         </p>
                     </div>
@@ -332,13 +332,13 @@
 
                 <div class="flex gap-6">
                     <div class="flex flex-col items-center">
-                        <div class="w-4 h-4 rounded-full bg-accent"></div>
-                        <div class="w-0.5 h-full bg-accent/30 mt-2"></div>
+                        <div class="w-4 h-4 rounded-full bg-accentLight dark:bg-accent"></div>
+                        <div class="w-0.5 h-full bg-accentLight/30 dark:bg-accent/30 mt-2"></div>
                     </div>
                     <div class="pb-8">
-                        <div class="text-gray-600 dark:text-slate text-sm mb-1">Continu</div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-lightSlate mb-2">Formation Relational Databases Certification</h3>
-                        <p class="text-gray-600 dark:text-slate">
+                        <div class="text-lightTextSecondary dark:text-slate text-sm mb-1">Continu</div>
+                        <h3 class="text-xl font-bold text-lightText dark:text-lightSlate mb-2">Formation Relational Databases Certification</h3>
+                        <p class="text-lightTextSecondary dark:text-slate">
                             Formation approfondie sur freeCodeCamp couvrant les base de données relationnelles.
                         </p>
                     </div>
@@ -346,13 +346,13 @@
 
                 <div class="flex gap-6">
                     <div class="flex flex-col items-center">
-                        <div class="w-4 h-4 rounded-full bg-accent"></div>
-                        <div class="w-0.5 h-full bg-accent/30 mt-2"></div>
+                        <div class="w-4 h-4 rounded-full bg-accentLight dark:bg-accent"></div>
+                        <div class="w-0.5 h-full bg-accentLight/30 dark:bg-accent/30 mt-2"></div>
                     </div>
                     <div>
-                        <div class="text-gray-600 dark:text-slate text-sm mb-1">Continu</div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-lightSlate mb-2">Challenges CodinGame</h3>
-                        <p class="text-gray-600 dark:text-slate">
+                        <div class="text-lightTextSecondary dark:text-slate text-sm mb-1">Continu</div>
+                        <h3 class="text-xl font-bold text-lightText dark:text-lightSlate mb-2">Challenges CodinGame</h3>
+                        <p class="text-lightTextSecondary dark:text-slate">
                             Participation régulière aux défis algorithmiques pour améliorer mes compétences 
                             en résolution de problèmes et optimisation.
                         </p>
@@ -362,31 +362,31 @@
         </section>
 
         <!-- FOOTER -->
-        <footer class="px-6 md:px-24 py-12 border-t border-white/5">
+        <footer class="px-6 md:px-24 py-12 border-t border-lightTextSecondary/10 dark:border-white/5">
             <div class="flex flex-col items-center gap-6">
                 <div class="flex gap-6">
                     <a href="https://github.com/habibahdev" 
                         target="_blank"
-                        class="text-slate hover:text-accent transition text-2xl">
+                        class="text-slate hover:text-accentLight dark:hover:text-accent transition text-2xl">
                         <i class="ri-github-fill"></i>
                     </a>
                     <a href="mailto:ummhabibah-ouattara@outlook.com"
-                        class="text-slate hover:text-accent transition text-2xl">
+                        class="text-slate hover:text-accentLight dark:hover:text-accent transition text-2xl">
                         <i class="ri-mail-line"></i>
                     </a>
                 </div>
                 
                 <!--
                 <div class="text-slate text-sm text-center">
-                    Designé et développé avec <span class="text-accent">❤</span> par Umm-Habibah Ouattara
+                    Designé et développé avec <span class="text-accentLight dark:text-accent">❤</span> par Umm-Habibah Ouattara
                 </div>
                 -->
             </div>
         </footer>
 
         <button id="scrollToTop" 
-                class="fixed bottom-8 right-8 bg-accent text-navy w-12 h-12 rounded-full shadow-lg 
-                    hover:bg-accent/80 transition-all duration-300 opacity-0 invisible z-50 flex items-center justify-center">
+                class="fixed bottom-8 right-8 bg-accentLight dark:bg-accent text-white dark:text-navy w-12 h-12 rounded-full shadow-lg 
+                    hover:bg-accentLight/80 dark:hover:bg-accent/80 transition-all duration-300 opacity-0 invisible z-50 flex items-center justify-center">
             <i class="ri-arrow-up-line text-xl"></i>
         </button>
 
