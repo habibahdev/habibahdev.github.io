@@ -8,11 +8,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        //navy: '#0a192f',
-        //lightNavy: '#112240',
-        //slate: '#8892b0',
-        //lightSlate: '#ccd6f6',
-        //accent: '#a8dadc',
         navy: '#0f172a', // bleu nuit => background principal
         lightNavy: '#1e293b', // bleu gris => background secondaire
         slate: '#94a3b8', // gris bleuté (texte secondaire)
