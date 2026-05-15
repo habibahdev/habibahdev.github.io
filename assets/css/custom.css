@@ -13,26 +13,108 @@
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
+.section-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-number {
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+
+h1,
+h2.text-3xl,
+h3.text-2xl,
+h3.text-xl.font-bold {
+    letter-spacing: -0.02em;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.is-active::after {
+    width: 100%;
+}
+
+.nav-link.is-active {
+    color: #8b5cf6;
+}
+
+.dark .nav-link.is-active {
+    color: #06b6d4;
+}
+
 .project-card {
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px -12px rgba(139, 92, 246, 0.2);
+}
+
+.dark .project-card:hover {
+    box-shadow: 0 12px 40px -12px rgba(6, 182, 212, 0.15);
 }
 
 .skill-badge {
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-badge:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.skill-badge:hover {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
 }
 
 .dark .skill-badge:hover {
-    box-shadow: 0 0 20px rgba(168, 218, 220, 0.3);
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
 }
 
-.skill-badge:hover {
-    box-shadow: 0 0 20px rgba(168, 218, 220, 0.5);
+::selection {
+    background: rgba(139, 92, 246, 0.25);
+}
+
+.dark ::selection {
+    background: rgba(6, 182, 212, 0.3);
+}
+
+:focus-visible {
+    outline: 2px solid #8b5cf6;
+    outline-offset: 2px;
+}
+
+.dark :focus-visible {
+    outline-color: #06b6d4;
+}
+
+.header-scrolled {
+    box-shadow: 0 4px 24px -4px rgba(15, 23, 42, 0.08);
+}
+
+.dark .header-scrolled {
+    box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.4);
 }

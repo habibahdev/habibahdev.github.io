@@ -7,6 +7,11 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        display: ['Poppins', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        mono: ['Poppins', 'Helvetica Neue', 'Arial', 'sans-serif'],
+      },
       colors: {
         navy: '#0f172a', // bleu nuit => background principal
         lightNavy: '#1e293b', // bleu gris => background secondaire

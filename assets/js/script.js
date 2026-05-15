@@ -1,4 +1,6 @@
 const scrollBtn = document.getElementById('scrollToTop');
+const header = document.querySelector('header');
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
         scrollBtn.classList.remove('opacity-0', 'invisible');
@@ -7,13 +9,14 @@ window.addEventListener('scroll', () => {
         scrollBtn.classList.add('opacity-0', 'invisible');
         scrollBtn.classList.remove('opacity-100', 'visible');
     }
+
+    if (header) {
+        header.classList.toggle('header-scrolled', window.scrollY > 20);
+    }
 });
 
 scrollBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 const observerOptions = {
@@ -36,11 +39,22 @@ document.querySelectorAll('.project-card, .skill-badge').forEach(el => {
     el.style.transition = 'all 0.6s ease-out';
     observer.observe(el);
 });
-// Gestionnaire de thème
+
+const sectionRevealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.section-reveal').forEach(el => {
+    sectionRevealObserver.observe(el);
+});
+
 const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 
-// Fonction pour définir le thème
 function setTheme(theme) {
     if (theme === 'dark') {
         html.classList.add('dark');
@@ -48,9 +62,9 @@ function setTheme(theme) {
         html.classList.remove('dark');
     }
     localStorage.setItem('theme', theme);
+    themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Passer au thème clair' : 'Passer au thème sombre');
 }
 
-// Vérifier la préférence sauvegardée ou la préférence système
 const savedTheme = localStorage.getItem('theme');
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -62,14 +76,11 @@ if (savedTheme) {
     setTheme('light');
 }
 
-// Écouteur d'événement pour le bouton de changement de thème
 themeToggle.addEventListener('click', () => {
     const currentTheme = html.classList.contains('dark') ? 'dark' : 'light';
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    setTheme(newTheme);
+    setTheme(currentTheme === 'dark' ? 'light' : 'dark');
 });
 
-// Écouter les changements de préférence système
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
     if (!localStorage.getItem('theme')) {
         setTheme(e.matches ? 'dark' : 'light');
@@ -82,21 +93,41 @@ const mobileMenu = document.getElementById('mobileMenu');
 menuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
     const icon = menuToggle.querySelector('i');
-    if (mobileMenu.classList.contains('hidden')) {
-        icon.classList.remove('ri-close-line');
-        icon.classList.add('ri-menu-3-line');
-    } else {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+    if (isOpen) {
         icon.classList.remove('ri-menu-3-line');
         icon.classList.add('ri-close-line');
+    } else {
+        icon.classList.remove('ri-close-line');
+        icon.classList.add('ri-menu-3-line');
     }
 });
 
-const mobileLinks = mobileMenu.querySelectorAll('a');
-mobileLinks.forEach(link => {
+mobileMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
+        menuToggle.setAttribute('aria-expanded', 'false');
         const icon = menuToggle.querySelector('i');
         icon.classList.remove('ri-close-line');
         icon.classList.add('ri-menu-3-line');
     });
 });
+
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = [...navLinks]
+    .map(link => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.id;
+            navLinks.forEach(link => {
+                link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
+            });
+        }
+    });
+}, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+sections.forEach(section => navObserver.observe(section));
